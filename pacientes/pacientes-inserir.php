@@ -2,7 +2,7 @@
 
 $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
-$nasci = $_POST['data'];
+$nasci = $_POST['data_nascimento'];
 $convenio = $_POST['convenio'];
 $diag = $_POST['diagnostico'];
 
