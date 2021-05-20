@@ -73,5 +73,21 @@ CREATE TABLE `bd_consultorio`.`tb_pacientes`(
 ### Criação da tabela de agendamentos
 
 ```sql
+CREATE TABLE `bd_consultorio`.`tb_agenda` (
+     `id` INT NOT NULL AUTO_INCREMENT , 
+     `data` DATE NOT NULL , 
+     `hora` TIME NOT NULL ,  
+     `id_medico` INT NOT NULL , 
+     `sala` VARCHAR(20) NOT NULL , 
+     `id_paciente` INT NOT NULL ,  
+      PRIMARY KEY  (`id`)) 
+ENGINE = InnoDB;
+
+
+ALTER TABLE `tb_agenda` ADD CONSTRAINT `fk_agenda_medico` FOREIGN KEY (`id_medico`) REFERENCES `tb_medicos`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+ALTER TABLE `tb_agenda` ADD CONSTRAINT `fk_agenda_paciente` FOREIGN KEY (`id_paciente`) REFERENCES `tb_pacientes`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ```
+

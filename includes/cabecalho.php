@@ -18,5 +18,5 @@
         <nav class="d-flex justify-content-end mb-5"> 
             <a href="../medicos/medicos-listar.php" class="text-decoration-none me-5 btn btn-outline-secondary"><img src="../img/medico.png">Cadastro de médicos</a>
             <a href="../pacientes/pacientes-listar.php" class="text-decoration-none me-5 btn btn-outline-secondary"><img src="../img/paciente.png">Cadastro de pacientes</a>
-            <a href="#" class="text-decoration-none me-5 btn btn-outline-secondary"><img src="../img/agenda.png">Agendamento de consultas</a>
+            <a href="../agenda/agenda-listar.php" class="text-decoration-none me-5 btn btn-outline-secondary"><img src="../img/agenda.png">Agendamento de consultas</a>
         </nav>
