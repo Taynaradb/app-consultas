@@ -1,7 +1,7 @@
 <?php include "../includes/cabecalho.php"; ?>
 <hr>
 <p>
-    <a href="medicos-formulario-inserir.php" class="btn btn-primary"> <i class="bi-plus-circle"></i> Novo médico</a>
+    <a href="medicos-formulario-inserir.php" class="btn btn-primary"><i class="bi bi-plus-circle me-2"></i> Novo médico</a>
 </p>
 
 <?php
@@ -27,8 +27,8 @@ $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
         echo "<td>{$medico['telefone']}</td>";
         echo "<td>{$medico['crm']}</td>"; 
         echo "<td>{$medico['especialidade']}</td>";
-        echo "<td><a href='medicos-formulario-alterar.php?id_medico={$medico['id']}'>Alterar</a> | ";
-        echo "<a class='btn btn-danger' href='medicos-excluir.php?id_medico={$medico['id']}'><i class='bi bi-x-lg'></i></a></td>";
+        echo "<td><a href='medicos-formulario-alterar.php?id_medico={$medico['id']}'><img src='../img/alterar.png'></a>  ";
+        echo "<a class='' href='medicos-excluir.php?id_medico={$medico['id']}'><img src='../img/excluir.png'></a></td>";
         echo "</tr>";
     }
     ?>

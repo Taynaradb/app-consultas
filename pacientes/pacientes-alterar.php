@@ -20,8 +20,7 @@
 
     
     if($resultado){
-        echo  "Alterado com sucesso<br>";
-        echo "<a href='pacientes-listar.php'>Voltar</a>";
+        header ("location: pacientes-listar.php");
     }else{
         echo "Alguma coisa aconteceu";
     }

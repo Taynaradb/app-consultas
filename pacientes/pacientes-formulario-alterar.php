@@ -37,7 +37,7 @@ while($paciente = mysqli_fetch_assoc($listaDePacientes)){
       <label for="">Data de nacimento:</label>
       <input class="form-control" type="date" value="<?php echo $data_nascimento ; ?>" name="data_nascimento">
     </div>
-    <div class="col mt-4">
+    <div class="col">
     <?php
       $marcado = "";
       if($convenio == 'sim'){

@@ -91,3 +91,11 @@ ALTER TABLE `tb_agenda` ADD CONSTRAINT `fk_agenda_paciente` FOREIGN KEY (`id_pac
 
 ```
 
+
+### Criação da tabela de login
+
+```sql
+CREATE TABLE `bd_consultorio`.`tb_user` ( `id` INT NOT NULL AUTO_INCREMENT , `user` VARCHAR(30) NOT NULL , `senha` VARCHAR(8) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+```
+
